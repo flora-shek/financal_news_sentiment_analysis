@@ -3,11 +3,44 @@
   <head>
     <title>Financial sentiment Analyser</title>
     {% include 'bootstrap.html' %}
+    <style>
+      
+      textarea{
+        
+      }
+    </style>
   </head>
   <body>
-    <div class="text-center">
-      <h3>Financial sentiment Analyser</h3>
-      <p>You can analyse the sentiment of financial news with <b>DistillRoberta</b> powered by <i>Hugging face</i>.</p>
+    <div class="container">
+      <div class="text-center mt-4 mb-4"">
+            <h3 class ="fs-2">Financial Sentiment Analyser</h3>
+            <p class="fw-semibold fs-5 mb-4 text-secondary">Use sentiment analysis to quickly detect the sentiment of financial news with <b class="fw-bolder">DistilRoberta</b> powered by <a href="https://https://huggingface.co/" target ="_blank" class = "fst-italic text-decoration-underline text-secondary">Hugging face</a>.</p>
+        
+          <div class="container text-center mt-4">
+            <div class="row align-items-center mt-4"> 
+              <div class="col">
+                  <div class="text-start">
+                    <label for="textarea1" class="form-label fw-semibold">Text</label>
+                  </div>
+                 <textarea class="form-control fs-6 lh-base fw-semibold" id="textarea1" rows="6" placeholder="Type/Paste the financial news here."></textarea>
+              </div>
+              <div class="col">
+                <label for="textarea1" class="form-label fw-semibold">Text</label>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar w-75"></div>
+                </div>
+                <div class="progress mt-4" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar w-75"></div>
+                </div>
+                <div class="progress mt-4" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar w-75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+       
+      </div>
     </div>
   </body>
 </html>
