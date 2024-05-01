@@ -1,4 +1,4 @@
-from flask import Flask, render_template,jsonify
+from flask import Flask, render_template,jsonify,request
 from api import api_loader
 from example import text
 app = Flask(__name__)
@@ -22,9 +22,12 @@ def examples(example):
     return render_template("index.html",text = text[2])
 @app.route("/result",methods=['post'])
 def result():
-  token = request.form.get('')
-  
-  return render_template("index.html")
+  token = request.form.get('floatingTextarea')
+  result = api_loader(token)
+  score1 = round((result[0][0]['score']*100),2)
+  score2 = round((result[0][1]['score']*100),2)
+  score3 = round((result[0][2]['score']*100),2)
+  return render_template("index.html",result = result,s1=score1,s2=score2,s3=score3)
   
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=4080,debug=True)
