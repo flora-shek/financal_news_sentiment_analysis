@@ -3,10 +3,55 @@
   <head>
     <title>Sign-in | fi-analyse</title>
     {% include 'bootstrap.html' %}
+    <link rel ="stylesheet" href="/static/style.css">
   </head>
   <body>
-    {% include 'nav.html' %}
-
+      <div class = "container d-flex justify-content-center align-items-center min-vh-100">
+         <div class ="row-border rounded-5 p-3 bg-white shadow box-area">
+           <div class="rounded-4 d-flex justify-content-center flex-column left-box" style ="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
+              
+             <p class="text-white fw-semibold fs-2 text-center font-monospace">Be Verified</p>
+           </div>
+           <div class="right-box mt-2">
+                  <div class ="row align-items-center">
+                      <div class="header-text">
+                        <p class="text-secondary fw-bold">Hello,Again!</p>
+                        
+                      </div>
+                           <div class="form-floating mb-3 ">
+                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                             <label for="floatingInput" style="margin-left:5px;">Email address</label>
+                           </div>
+                           <div class="form-floating mb-3" >
+                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                             <label for="floatingPassword" style="margin-left:5px;">Password</label>
+                           </div>
+                           <div class="mb-3 form-check" style="margin-left:14px;">
+                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                             <label class="form-check-label text-secondary" for="exampleCheck1">Remember me</label>
+                              <label class="form-check-label "style="margin-left:210px"><a href ="#" class ="text-secondary" >forgot password?</a></label>
+                             
+                           </div>
+                           <div class ="mb-3 text-center">
+                               <input type="submit" class="form-control btn btn-info text-white fw-semibold " id="submit">
+                           </div>
+                           <div class="mb-3 text-center">
+                             <a href="#!" class="btn bsb-btn-xl w-100" style="background:lightgrey;">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-google" viewBox="0 0 16 16">
+                                 <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                               </svg>
+                               <span class="ms-2  fw-semibold">Signin with Google</span>
+                             </a>
+                           </div>
+                           <div class="mb-3">
+                        
+                             <label class="form-check-label text-secondary">Don't have an account?<span> </span><a href ="#" class ="text-secondary">Signup</a></label>
+                           </div>
+                  </div>
+            </div>
+           
+         </div>
+      </div>
      
   </body>
 </html>
