@@ -4,19 +4,19 @@
     <title>Financial sentiment Analyser</title> 
     {% include 'bootstrap.html' %}
   </head>
-  <body style ="background-image: linear-gradient(to right top, #bc5f94, #b76daa, #ae7bbe, #a389ce, #9697db, #909ae1, #899ee6, #81a1eb, #7f9bee, #7f95f0, #808ff1, #8388f2);">
+  <body style="background:#ededf8;">
     {% include 'nav.html' %}
     <div class="container mb-2">
       <div class="text-center mt-5 mb-5"">
             <h3 class ="fs-2">Financial Sentiment Analyser</h3>
             <p class="fw-semibold fs-6 mb-4 text-secondary">You can quickly detect the sentiment of financial news with <b class="fw-bolder">DistilRoberta</b> powered by <a href="https://https://huggingface.co/" target ="_blank" class = "fst-italic text-decoration-underline text-secondary">Hugging face</a>.</p>
       </div>
-      <div class="shadow p-3 mb-5 bg-body rounded">
+      <div class="shadow p-3 mb-5 rounded" style ="background-image: linear-gradient(to right top, #bc5f94, #b76daa, #ae7bbe, #a389ce, #9697db, #909ae1, #899ee6, #81a1eb, #7f9bee, #7f95f0, #808ff1, #8388f2);">
          <div class="container">
            <form action ='/result' method="post">   
                <div class="row">
                  <div class="col">
-                   <h5>Text Classification</h5>
+                   <h5 class="text-white fw-semibold">Text Classification</h5>
                  </div>
                  
                  <div class="col text-end">
