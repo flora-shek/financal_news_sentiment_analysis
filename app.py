@@ -32,13 +32,6 @@ def result():
   score3 = round((result[0][2]['score']*100),2)
   return render_template("index.html",result = result,s1=score1,s2=score2,s3=score3,sentence = token,l1=label1,l2=label2,l3=label3)
 
-@app.route("/signin")
-def signin():
-  return render_template("signin.html")
-
-@app.route("/signup")
-def signup():
-  return render_template("signup.html")
   
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=4080,debug=True)
